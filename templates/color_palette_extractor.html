@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Color palette extractor from image</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="{{url_for('static', path='/vendor/bootstrap-5.1.3/css/bootstrap.min.css')}}">
+        <script src="{{url_for('static', path='/vendor/bootstrap-5.1.3/js/bootstrap.min.js')}}"></script>
+        <!-- bootstrap icons via cdn: -->
+        <!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
+
+
+        <style lang="scss">
+            .dropbox {
+              outline: 2px dashed grey; /* the dash box */
+              outline-offset: -10px;
+              background: lightcyan;
+              color: dimgray;
+              padding: 10px 10px;
+              min-height: 200px; /* minimum height */
+              position: relative;
+              cursor: pointer;
+            }
+            
+            .input-file {
+              opacity: 0; /* invisible but it's there! */
+              width: 100%;
+              height: 200px;
+              position: absolute;
+              cursor: pointer;
+            }
+            
+            .dropbox:hover {
+              background: lightblue; /* when mouse over to the drop zone, change color */
+            }
+            
+            .dropbox p {
+              font-size: 1.2em;
+              text-align: center;
+              padding: 50px 0;
+            }
+          </style>
+
+    </head>
+    <script type="importmap">
+        {
+          "imports": {
+            "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+          }
+        }
+    </script>
+
+    
+
+    <body id="app">
+      
+      <div class="container-fluid">
+        <header>
+          <div class="px-3 py-2 bg-dark text-white">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+      
+                <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                  <li>
+                    <a href="#" class="nav-link text-secondary  text-white">
+                      <!--<svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"></use></svg>-->
+                      <i class="bi bi-house-door d-block mx-auto mb-1 text-center"></i>
+
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <!--<svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"></use></svg>-->
+                      <i class="bi bi-speedometer2 d-block mx-auto mb-1 text-center"></i>
+                      Dashboard
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <!--<svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"></use></svg>-->
+                      <i class="bi bi-calendar-week d-block mx-auto mb-1 text-center"></i>
+
+                      Orders
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <!--<svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"></use></svg>-->
+                      <i class="bi bi-grid d-block mx-auto mb-1 text-center"></i>
+                      Products
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <!--<svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"></use></svg>-->
+                      <i class="bi bi-person-hearts d-block mx-auto mb-1 text-center"></i>
+
+                      Customers
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="px-3 py-2 border-bottom mb-3">
+            <div class="container d-flex flex-wrap justify-content-center">
+              <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+              </form>
+      
+              <div class="text-end">
+                <button type="button" class="btn btn-light text-dark me-2">Login</button>
+                <button type="button" class="btn btn-primary">Sign-up</button>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+        <div class="container">
+
+        
+          <h1>[[message]]</h1> 
+
+
+        <!--UPLOAD-->
+        <form enctype="multipart/form-data" novalidate v-if="isInitial || isSaving">
+            <p>Upload images here:</p>
+            <div class="dropbox">
+              <!--for multiple files, just add the multiple attribute:-->
+              <!--<input type="file" multiple :name="uploadFieldName" :disabled="isSaving" @change="filesChange($event.target.name, $event.target.files); fileCount = $event.target.files.length"-->
+              <input type="file" :name="uploadFieldName" :disabled="isSaving" @change="filesChange($event.target.name, $event.target.files); fileCount = $event.target.files.length"
+                accept="image/*" class="input-file">
+                <p v-if="isInitial">
+                Drag your file(s) here to begin<br> or click to browse
+                </p>
+                <p v-if="isSaving">
+                Uploading [[ fileCount ]] files...
+                </p>
+            </div>
+        </form>
+
+        <!--SUCCESS-->
+        <div v-if="isSuccess">
+        <h2>Uploaded [[uploadedFiles.length ]] file(s) successfully.</h2>
+        <p>
+            <a href="javascript:void(0)" @click="reset()">Upload again</a>
+        </p>
+        <ul class="list-unstyled">
+            <li v-for="item in uploadedFiles">
+            <img :src="getImgUrl(item)" class="img-responsive img-thumbnail" :alt="item.originalName">
+            </li>
+        </ul>
+        </div>
+        <!--FAILED-->
+        <div v-if="isFailed">
+        <h2>Uploaded failed.</h2>
+        <p>
+            <a href="javascript:void(0)" @click="reset()">Try again</a>
+        </p>
+        <pre>[[uploadError ]]</pre>
+        </div>
+
+        <script src="" async defer></script>
+
+        </div>
+    </body>
+
+    <!-- hack to import axios: -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script type="module">
+
+        import { createApp } from 'vue'
+        import { upload } from "{{ url_for('static', path='/js/file-upload.service.js') }}";
+        const STATUS_INITIAL = 0, STATUS_SAVING = 1, STATUS_SUCCESS = 2, STATUS_FAILED = 3;
+
+
+        createApp({
+            data() {
+                return{
+                    message: 'Color palette extractor from image!!!',
+                    uploadedFiles: [],
+                    uploadError: null,
+                    currentStatus: null,
+                    uploadFieldName: 'images'
+                }
+            },
+            computed: {
+                isInitial() {
+                  return this.currentStatus === STATUS_INITIAL;
+                },
+                isSaving() {
+                  return this.currentStatus === STATUS_SAVING;
+                },
+                isSuccess() {
+                  return this.currentStatus === STATUS_SUCCESS;
+                },
+                isFailed() {
+                  return this.currentStatus === STATUS_FAILED;
+                }
+              },
+              methods: {
+                reset() {
+                  // reset form to initial state
+                  this.currentStatus = STATUS_INITIAL;
+                  this.uploadedFiles = [];
+                  this.uploadError = null;
+                },
+                save(formData) {
+                  // upload data to the server
+                  this.currentStatus = STATUS_SAVING;
+          
+                  upload(formData)
+                    .then(x => {
+                        console.log("x:", x);
+                      this.uploadedFiles = [].concat(x);
+                      this.currentStatus = STATUS_SUCCESS;
+                    })
+                    .catch(err => {
+                        console.log("error!", err);
+                      this.uploadError = err.response;
+                      this.currentStatus = STATUS_FAILED;
+                    });
+                },
+                filesChange(fieldName, fileList) {
+                  // handle file changes
+                  const formData = new FormData();
+          
+                  if (!fileList.length) return;
+          
+                  // append the files to FormData
+                  Array
+                    .from(Array(fileList.length).keys())
+                    .map(x => {
+                      formData.append(fieldName, fileList[x], fileList[x].name);
+                    });
+          
+                  // save it
+                  this.save(formData);
+                },
+                getImgUrl(img) {
+                    return img.url;
+                }
+              },
+              mounted() {
+                this.reset();
+              },
+            delimiters: ['[[',']]']   // changed vue delimiters not to be the same as jinja2 templating
+          }).mount('#app')
+
+    </script>
+
+    
+</html>
