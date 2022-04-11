@@ -1,4 +1,5 @@
 from collections import Counter
+from math import dist
 from sklearn.cluster import KMeans, OPTICS
 from matplotlib import colors
 import matplotlib.pyplot as plt
@@ -6,6 +7,15 @@ import numpy as np
 import cv2
 import hdbscan
 import operator
+
+from sklearn.cluster import SpectralClustering
+from sklearn.metrics.pairwise import euclidean_distances
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+
 
 def extractColorPaletteFromImg(img_src):
 
@@ -17,7 +27,7 @@ def extractColorPaletteFromImg(img_src):
     print("img shape:", image.shape)
 
     # resize image to smaller to contain less pixels:
-    image = cv2.resize(image, (image.shape[1]//4, image.shape[0]//4), interpolation = cv2.INTER_AREA)                                          
+    image = cv2.resize(image, (image.shape[1]//10, image.shape[0]//10), interpolation = cv2.INTER_AREA)                                          
     plt.imshow(image)
     plt.show()
 
@@ -53,18 +63,21 @@ def extractColorPaletteFromImg(img_src):
     a = sorted(count_vals.items(), key=lambda x: x[1], reverse=True)    
     print("a sorted:", a)
     
-    most_encountered_color = a[0][0]
+    most_encountered_color = eval(a[0][0])
     nr_px_most_color = a[0][1]
 
     
     print("most_encountered color:", most_encountered_color )
-    print("hex:", rgb_to_hex(eval(most_encountered_color)))
+    print("hex:", rgb_to_hex(most_encountered_color))
     print("nr pixels most color:", nr_px_most_color)
 
     print("first 5 colors:")
     i = 1
 
     most_popular_colors = []
+
+    most_popular_colors = pixels_flattened
+    
     while a[i][1]==nr_px_most_color:
         print(rgb_to_hex(eval(a[i][0])))
         i+=1
@@ -73,6 +86,32 @@ def extractColorPaletteFromImg(img_src):
     print("most popular colors:", most_popular_colors)
 
 
+    # most_popular_colors = [[1, 2, 1], [3, 4, 1], [3, 4, 1], [3, 4, 1]]
+    dist_matrix = euclidean_distances([most_encountered_color], most_popular_colors)
+    print("distance matrix:", dist_matrix)
+    # argmax_idx = np.argmax(dist_matrix)
+    argmax_idx = np.unravel_index(dist_matrix.argmax(), dist_matrix.shape)
+    print("argmax_idx:", argmax_idx)
+    print("biggest_distance:", dist_matrix[argmax_idx[0]][argmax_idx[1]])
+    biggest_dist_color = most_popular_colors[argmax_idx[1]]
+    print("color with biggest_distance:", biggest_dist_color)
+    print("hex:", rgb_to_hex(biggest_dist_color))
+
+    
+    fig = plt.figure()
+    ax = fig.add_subplot(projection='3d')
+
+    # for color in most_popular_colors:
+    for color in pixels_flattened:
+        r, g, b = color
+        ax.scatter(r, g, b, color=rgb_to_hex(color))
+
+    plt.show()
+
+
+
+
+    analyze(pixels_flattened)
 
 
 
