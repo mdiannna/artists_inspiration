@@ -20,9 +20,11 @@ templates = Jinja2Templates(directory="templates")
 
 
 
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
+@app.get("/", response_class=HTMLResponse)
+async def root(request:Request):
+    return templates.TemplateResponse("index.html", {"request":request})
+    # return {"message": "Hello World"}
+
     
 
 @app.get("/color-palette-extractor", response_class=HTMLResponse)

@@ -1,24 +1,8 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>    
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Color palette extractor from image</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-        <link rel="stylesheet" href="{{url_for('static', path='/vendor/bootstrap-5.1.3/css/bootstrap.min.css')}}">
-        <script src="{{url_for('static', path='/vendor/bootstrap-5.1.3/js/bootstrap.min.js')}}"></script>
-        <!-- bootstrap icons via cdn: -->
-        <!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"> -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
-
-
-
+{% extends "base.html" %}
+{% block title %}Color palette extractor from imag{% endblock %}
+        
+{% block head %}
+    {{ super() }}
         <style lang="scss">
             .dropbox {
               outline: 2px dashed grey; /* the dash box */
@@ -50,7 +34,6 @@
             }
           </style>
 
-    </head>
     <script type="importmap">
         {
           "imports": {
@@ -59,80 +42,15 @@
         }
     </script>
 
+{% endblock %}
     
-
-    <body id="app">
+{% block content%}
       
-      <div class="container-fluid">
-        <header>
-          <div class="px-3 py-2 bg-dark text-white">
-            <div class="container">
-              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-                  <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-                </a>
-      
-                <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-                  <li>
-                    <a href="#" class="nav-link text-secondary  text-white">
-                      <!--<svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"></use></svg>-->
-                      <i class="bi bi-house-door d-block mx-auto mb-1 text-center"></i>
-
-                      Home
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link text-white">
-                      <!--<svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"></use></svg>-->
-                      <i class="bi bi-speedometer2 d-block mx-auto mb-1 text-center"></i>
-                      Dashboard
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link text-white">
-                      <!--<svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"></use></svg>-->
-                      <i class="bi bi-calendar-week d-block mx-auto mb-1 text-center"></i>
-
-                      Orders
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link text-white">
-                      <!--<svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"></use></svg>-->
-                      <i class="bi bi-grid d-block mx-auto mb-1 text-center"></i>
-                      Products
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link text-white">
-                      <!--<svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"></use></svg>-->
-                      <i class="bi bi-person-hearts d-block mx-auto mb-1 text-center"></i>
-
-                      Customers
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="px-3 py-2 border-bottom mb-3">
-            <div class="container d-flex flex-wrap justify-content-center">
-              <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto">
-                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-              </form>
-      
-              <div class="text-end">
-                <button type="button" class="btn btn-light text-dark me-2">Login</button>
-                <button type="button" class="btn btn-primary">Sign-up</button>
-              </div>
-            </div>
-          </div>
-        </header>
-      </div>
+      <div class="container-fluid" id="app">
         <div class="container">
 
         
-          <h1>[[message]]</h1> 
+          <h1>Color palette extractor from image</h1> 
 
 
         <!--UPLOAD-->
@@ -154,15 +72,24 @@
 
         <!--SUCCESS-->
         <div v-if="isSuccess">
-        <h2>Uploaded [[uploadedFiles.length ]] file(s) successfully.</h2>
-        <p>
-            <a href="javascript:void(0)" @click="reset()">Upload again</a>
-        </p>
-        <ul class="list-unstyled">
-            <li v-for="item in uploadedFiles">
-            <img :src="getImgUrl(item)" class="img-responsive img-thumbnail" :alt="item.originalName">
-            </li>
-        </ul>
+          <h2>Uploaded [[uploadedFiles.length ]] file(s) successfully.</h2>
+          <p>
+              <a href="javascript:void(0)" @click="reset()">Upload again</a>
+          </p>
+
+          <div class="row">
+            <div class="col">
+              <ul class="list-unstyled">
+                  <li v-for="item in uploadedFiles">
+                  <img :src="getImgUrl(item)" class="img-responsive img-thumbnail img-max-50"  :alt="item.originalName">
+                  </li>
+              </ul>
+            </div>
+            <div class="col">
+              Color palette of the image:
+              TODO
+            </div>
+          </div>
         </div>
         <!--FAILED-->
         <div v-if="isFailed">
@@ -176,13 +103,15 @@
         <script src="" async defer></script>
 
         </div>
-    </body>
+      </div>
+    
+    {% endblock %}
 
+    {% block scripts %}
     <!-- hack to import axios: -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <script type="module">
-
         import { createApp } from 'vue'
         import { upload } from "{{ url_for('static', path='/js/file-upload.service.js') }}";
         const STATUS_INITIAL = 0, STATUS_SAVING = 1, STATUS_SUCCESS = 2, STATUS_FAILED = 3;
@@ -262,6 +191,5 @@
           }).mount('#app')
 
     </script>
+    {% endblock %}
 
-    
-</html>
