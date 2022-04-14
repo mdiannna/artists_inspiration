@@ -7,7 +7,8 @@
             .dropbox {
               outline: 2px dashed grey; /* the dash box */
               outline-offset: -10px;
-              background: lightcyan;
+              /*background: lightcyan;*/
+              background: #d4dfb4;
               color: dimgray;
               padding: 10px 10px;
               min-height: 200px; /* minimum height */
@@ -24,7 +25,8 @@
             }
             
             .dropbox:hover {
-              background: lightblue; /* when mouse over to the drop zone, change color */
+              /*background: lightblue; */
+              background: #d4dfb4;
             }
             
             .dropbox p {
@@ -69,7 +71,7 @@
               <input type="file" :name="uploadFieldName" :disabled="isSaving" @change="filesChange($event.target.name, $event.target.files); fileCount = $event.target.files.length"
                 accept="image/*" class="input-file">
                 <p v-if="isInitial">
-                Drag your file(s) here to begin<br> or click to browse
+                Drag your image here to begin<br> or click to browse
                 </p>
                 <p v-if="isSaving">
                 Uploading [[ fileCount ]] files...

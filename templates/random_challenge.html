@@ -3,15 +3,23 @@
 {% block head %}
     {{ super() }}
     <!-- can add here more styles -->
+    <style>
+        .img_full_height {
+            height: 70vh;
+        }
+    </style>
 {% endblock %}
 
 {% block content %}
     <div class="container">
         <h1>Random challenge for artists</h1>
         <p class="important">
-        Welcome to my awesome homepage.
-        <br>
-        Work in progress...
+            Welcome to my awesome homepage - Work in progress...
         </p>
+        <br>
+        
+        <div class="text-center mx-auto">
+            <img src="{{url_for('static', path='/img/paper2_2.jpg')}}" class="img img-responive img_full_height">
+        </div>
     </div>
 {% endblock %}
