@@ -83,6 +83,10 @@ async def imgs_upload(images: List[UploadFile] = File(...)):
         return {"status":"error!", "data": saved_images}
 
 
+@app.get("/random-challenge", response_class=HTMLResponse)
+async def random_challenge(request:Request):
+    return templates.TemplateResponse("random_challenge.html", {"request": request})
+
 
 
 # @app.get("/items/{item_id}")
