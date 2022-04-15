@@ -10,6 +10,7 @@ from color_palette import extractColorPaletteFromImg
 from pydantic import BaseModel
 from typing import Optional
 import time
+import random
 
 app = FastAPI()
 
@@ -87,6 +88,32 @@ async def imgs_upload(images: List[UploadFile] = File(...)):
 async def random_challenge(request:Request):
     return templates.TemplateResponse("random_challenge.html", {"request": request})
 
+@app.get("/generate-rand-challenge")
+async def generate_rand_challenge():
+    # TODO: make a singleton to load all the dataa about animals, environments etc and load only once.
+    try:
+        f = open('challenges_data/animals_list.txt')
+        all_animals = eval(f.read())
+        f.close()
+    except:
+        # TODO: log instead of print
+        print("!! animals list file does not exist or could not be loaded... Using the default animals list")
+        all_animals = ["Dog", "Cat", "Alpaca", "Rabbit", "Turtle", "Giraffe", "Bug", "Bee", "Horse", "Lion", "Ox", "Owl"]
+    
+
+    # TODO: more options
+    all_environments = ["forest", "street", "theater", "planet", "space", "sea", "fantasy"]
+
+    #TODO: more artistic styles maybe
+    try:
+        f = open("challenges_data/artistic_styles.txt")
+        all_artistic_styles = f.read().split("\n")
+        f.close()
+    except:
+        all_artistic_styles = ["realism", "impressionism", "abstractionism"]
+
+
+    return {"animal": random.choice(all_animals).lower(), "environment": random.choice(all_environments).lower(), "style":random.choice(all_artistic_styles).lower()}
 
 
 # @app.get("/items/{item_id}")

@@ -1,0 +1,820 @@
+Aardvark	cub	sow	boar	N/A	orycteropodian	
+Albatross	chick	N/A	N/A	flock[8]
+gam (when searching for mates)[9]
+rookery[10]	diomedeid	
+Alligator	hatchling	cow	bull	congregation[11]	eusuchian	
+Alpaca[12]	cria	hembra	macho	herd	camelid	
+Anole	hatchling	?	?	?	dactyloidian	
+Ant	larva
+pupa	queen (fertile)
+soldier
+worker	drone	army[13]
+bike[13]
+colony[13][14]
+nest[11]
+swarm[13]	formic
+myrmicine	
+Anteater	pup	sow	boar	N/A	vermilinguan	
+Antelope	calf[15]	doe	buck	cluster[13][16]
+herd[13][16]
+tribe[13][16]	alcelaphine
+antilopine
+bubaline	
+Ape	baby
+child
+infant	N/A	N/A	band
+family
+group
+shrewdness[2][11][16][17]
+troop, group[11][13][16]	simian	
+Armadillo	baby
+pup	sow	boar	N/A	cingulatan	
+Ass/donkey	foal	jenny	jack	coffle[13][16]
+drove[11][13][16]
+herd[13]
+pace[13][14][16]	asinine	
+B
+Baboon	infant	babuina[18]	?	flange[19][a]
+troop, group[2][11][19]	?	
+Badger	cub
+kit	sow	boar	cete[2][11][14][19]
+colony[19]	musteline	
+Barracuda	N/A	N/A	N/A	school[20]	percesocine	
+Bat	pup	N/A	N/A	camp[21]
+cloud[19][22]
+colony[14][19]
+flock[23]	noctillionine
+pteropine	
+Bear (list)	cub[24]	she-bear
+sow	boar	sleuth[11][14][19]
+sloth[11][14][19]	ursine	
+Beaver	kit
+kitten
+pup	N/A	N/A	colony[11][19]
+family[11]	castoridine	
+Bee	larva
+pupa	queen
+worker[b]	drone	cast (a second swarm)[19]
+cluster (of workers around the queen)[19]
+colony[19]
+drift[2][19]
+erst[2][19]
+grist[11][19]
+hive[2][11][19]
+nest[11]
+rabble[19]
+stand[19]
+swarm[2][11][19]	apian
+apiarian
+apic	
+Beetle	larva
+grub (wormlike forms)[3][4]
+mealworm (darkling beetles)[3][4]
+pupa	N/A	N/A	swarm[3]	coleopterous	
+Binturong	cub	?	?	?	?	
+Bird (list)
+Also see Aves	chick	hen	cock	flight[2]
+flock[2]
+pod[2]	avian	
+Bison	calf	cow	bull	herd	bovine
+bubaline	
+Bluebird	?	?	?	?	?	
+Boar/wild pig
+Also see Pig	farrow
+piglet
+shoat/shote (just weaned)	sow	?	herd[19][25]
+singular[11][25]
+sounder (groups of 12 or more)[11][25]	?	
+Bobcat	bobkitten	?	?	?	feline	
+Budgerigar/budgie	chick	?	?	?	psittacine	
+Buffalo	calf	cow
+heifer	bull	gang[11][14][19]
+herd[11][14][19]
+obstinancy[11][14][19]
+troop[11]	bovine	
+Butterfly	caterpillar
+chrysalis
+larva
+pupa	?	?	flight[19]
+flutter[11][26]
+rabble[19]
+swarm[27]	lepidopteran
+pieridine
+pierine	
+C
+Camel	calf	cow	bull	caravan[11]
+flock[11]
+herd
+train[11]	camelid
+cameline	
+Capybara	pup	?	?	?	?	
+Caracal	kitten	?	?	?	feline	
+Caribou	calf	doe	buck	herd	rangiferine	
+Cassowary	chick
+hatchling	?	?	N/A	ratite	
+Cat (list)	kit
+kitten	molly
+pussy
+queen	gib (castrated male)[28]
+king
+tom	clowder[2][11]
+cluster[11]
+clutter[29]
+glaring[2][11]
+kindle (kittens)[30]
+litter (kittens)
+pillow (kittens)
+pounce[11]	feline	
+Caterpillar	?	?	?	army[11][31]	nymphal-lepidopteran	
+Cattle[c] (list)	calf[32]	cow[33]	bull	drove[11]
+herd[11]
+team (oxen)
+yoke (oxen)	bovine[d]
+taurine (male)
+vaccine (female)
+vituline (young)	beef
+veal
+Chamois	calf	doe	bull	herd	rupicaprine	
+Cheetah	cub	she-cheetah	cheetah	coalition (male)[34]	feline	
+Chicken (list)	chick	hen
+pullet	capon (castrated male)
+cock
+cockerel
+rooster	brood[11]
+clutch (eggs)
+flock
+peep (chicks)[11]	galline	poultry
+Chimpanzee	infant	empress	emperor
+blackback	troop, group
+tribe	panine	
+Chinchilla	kit	sow
+velvet	boar
+bull	?	chinchilline	
+Chough	chick	?	?	chattering[2][17][35]
+clattering[2][17][36]	corvine	
+Coati	kit
+pup	sow	boar	troop	nasuine	
+Cobra	?	?	?	quiver[37]	elapid	
+Cockroach	nymph	?	?	intrusion[37]	blattid	
+Cod	codling	?	?	school	gadine
+gadoid	
+Cormorant	chick
+shaglet	?	?	flight
+gulp[11][14][37]	?	
+Cougar	cub
+kitten	she-cougar	?	?	feline	
+Coyote	cub
+pup
+puppy
+whelp	bitch	dog	pack	canine	
+Crab	zoea	hen
+jenny	cock
+jimmy	?	cancrine	
+Crane	chick
+colt[38]	?	?	herd[39][40][41]
+sedge[14]
+sege[42]
+siege[43]	alectorine	
+Cricket	nymph	?	?	?	?	
+Crocodile	hatchling	cow	bull	bask[11]
+congregation
+float[11]	crocodilian	
+Crow	?	?	?	murder[2][11]	corvine	
+Cuckoo	?	?	?	?	?	
+Curlew	?	?	?	herd[2][17]	?	
+D
+Deer	calf[15]
+fawn	doe
+hind
+cow	buck
+bull[15]
+hart (red deer)
+stag	bunch[44]
+herd[44]
+mob[44]
+rangale[44]	cervine
+elaphine	humble (organ meat)
+venison
+Dhole	pup	?	?	pack	?	
+Dingo	pup	?	?	pack	canine [45]	
+Dinosaur (list)	calf (herbivores)
+chick (carnivores)
+hatchling
+juvenile	cow (herbivores)
+doe (carnivores)	buck (carnivores)
+bull (herbivores)	herd (herbivores)
+pack (carnivores)	dinosaurian	
+Dog (list)	pup[5]
+puppy
+whelp[46]	bitch	dog
+sire
+stud	comedy (boxers)[47][48]
+cowardice (curs)[14][49]
+cry (hounds)[50]
+kennel[44]
+litter (young)[51]
+mute[14]
+pack (wild)[14][44]	canine	
+Dogfish
+Also see Shark	?	?	?	troop[44]	selachian
+squaloid	capeshark (US)
+flake (UK, Australia)
+huss (UK)
+kahada (Canada)[52]
+rigg (UK)
+rock salmon (UK)
+spiny dogfish
+Dolphin	calf	cow	bull	herd
+pod[53][54]
+school[44]
+team[44]	delphine	
+Donkey (list)
+See Ass						
+Dove	chick	hen	cock	arc[11]
+cote
+dole[2][44]
+dule[11][44]
+flight[2][11][44]
+piteousness[2][44]
+pitying[11]	columbine	
+Dragonfly	nymph	queen	drake
+king	cluster
+flight	anisopteran	
+Duck (list)
+Also see Mallard	duckling	duck
+hen	cock
+drake	badling (on land)[14]
+brace (on land)[14]
+bunch (on water)[2][44]
+flock (on land)
+herd (on land)
+paddling (on water)[2][44]
+raft (on water)[2][44]
+safe (on land)[2]
+skein (in flight)[44]
+sord (on land)[44]
+sore (on land)[44]
+string (in flight)[44]
+team (in flight)[14][44]
+waddling (on land[44]	anatine
+fuliguline	poultry
+Dugong	calf	cow	bull	herd	dugongine	
+Dunlin	chick	?	?	fling[2]	?	
+E
+Eagle	eaglet
+fledgling	N/A	N/A	convocation[11][14]	aquiline	
+Echidna	puggle (in common use, but not scientifically endorsed)	?	?	N/A	tachyglossine	
+Eel	leptocephalus (larva)
+elver (juvenile)	N/A	N/A	bed[11]
+swarm[11]	anguilline	
+Eland	calf	cow	bull	herd	bovine	
+Elephant	calf[32]	cow[33]	bull[55]	herd
+memory[11]
+parade[21]	elephantine
+proboscidean
+proboscine	
+Elephant seal	pup	cow	bull	?	miroungan	
+Elk/wapiti	calf[15]	cow[15]	bull[15]	gang[11]
+herd[11]	cervine	venison
+Emu	chick
+hatchling	?	?	mob[11]	?	
+F
+Falcon	eyass/eyas	falcon	tercel
+terzel
+tiercel	cast[21]	acciptrine	
+Ferret	kit	jill	hob	business[11][14]
+busyness[17]	musteline	
+Finch	chick	hen	cock	charm[14]	fringilline	
+Fish (list)	fingerling
+fry	?	?	school[3]	piscine	
+Fisher	kit	?	?	?	gulonine
+musteline	
+Flamingo	chick	?	?	flamboyance[56]
+stand[21]	phoenicopterine	
+Fly	maggot	?	?	business[11]
+cloud[11]
+swarm[11]	dipterous	
+Flycatcher	chick	?	?	?	?	
+Fox	cub[24]
+kit
+pup[5]	vixen	dog
+reynard
+tod	leash[11][14]
+skulk[11][14]	vulpine	
+Frog	froglet
+polliwog
+tadpole	?	?	army[14]	ranine	
+G
+Gaur	calf	cow	bull	herd	bovine
+gaurine	garabeef
+Gazelle	calf[15]	cow[15]	bull[15]	herd	gazelline	
+Gecko	hatchling	dam (herpetoculture)	sire (herpetoculture)	?	?	
+Genet	kit	?	?	?	vivverine	
+Gerbil	pup	doe	buck	horde	gerbilline	
+Giant panda	cub	sow	boar	embarrassment [57]
+sleuth[58]	ailuropodine	
+Giraffe	calf	cow	bull	corps[59]
+herd
+tower[59][60]	giraffine	
+Gnat	larva	?	?	cloud[11][14][59]
+horde[11][14][59]
+rabble[59]
+swarm[11][59]	?	
+Gnu	calf	cow	bull	herd
+implausibility[61]	?	
+Goat (list)	kid	doe
+doeling
+nanny	billy
+buck
+buckling
+wether (castrated)	herd
+flock[59]
+tribe[59]
+trip[59]
+trippe[59]	caprine	cabrito
+chevon
+mutton
+Goldfinch	?	?	?	charm[59]	cardueline	
+Goosander	?	?	?	dopping[59]	?	
+Goose	gosling	goose	gander	chevron (in flight)[citation needed]
+flock (on land)
+gaggle (on land)[14][59]
+plump (on land)[59]
+skein (in flight)[2][14][59]
+team (in flight)[2][59]
+wedge (in flight)[2][59]	anatine
+anserine	poultry
+Gorilla	infant	N/A	blackback
+silverback	band[11][14][59]
+troop, group[11]
+whoop[59]	simian	
+Goshawk	?	?	?	flight[17][59]	?	
+Grasshopper	nymph	?	?	cloud[59]
+swarm[59]	caeliferian	
+Grouse	?	?	?	covey[59]
+pack[59]	tetraonine	
+Guanaco	chulengo[62]	?	?	herd	camelid	
+Guinea fowl	keet	hen	cock	flock[63]
+rasp[64]	numidine	poultry
+Guinea pig	pup	sow	boar	herd	?	cuy
+Gull	chick	hen	cock	colony
+flock	larine	
+H
+Hamster	pup	doe	buck	horde	cricetid	
+Hare	leveret	doe
+jill	buck
+jack	band
+down[65]
+drove[65]
+flick[65]
+husk[65]	leporine
+leverine[citation needed]	
+Hawk	eyas	hen	tiercel	aerie[66][e]
+boil (soaring in large groups)[14][66]
+cast[66][f]
+cauldron (soaring in large groups)[66]
+flight[66][g]
+flock[66]
+kettle (soaring in large groups)[11][66]
+leash[66][h]
+staff[66][i]	accipitrine	
+Hedgehog	hoglet
+piglet
+pup	sow	boar	array[65]	erinaceine	
+Hermit crab	zoea	?	?	?	paguroid	
+Heron	chick	hen	cock	flight[65]
+sedge[11][14][65]
+sege[42][65]
+siege[11][14][43][65]	ardeidine	
+Herring	?	?	?	army[14][65]
+glean[65]
+shoal[65]	clupeidean	
+Hippopotamus	calf	cow	bull	bloat[11][14][65]
+herd[65]
+sea[11][14][65]
+thunder[37]	hippopotamine	
+Hoatzin	chick	?	?	?	?	
+Hoopoe	chick	?	?	?	?	
+Hornet	larva
+pupa	queen	drone	bike[65]
+nest[14]
+swarm	vespine	
+Horse (list)	colt (male)
+filly (female)
+foal
+gelding (castrated male)	dam
+mare	stallion
+stud	band (wild horses)[11]
+field (racehorses)
+harras[14]
+herd (wild horses)[11]
+rag (colts)[14]
+stable[11]
+string (ponies)[14]
+stud[14]
+team (work horses)[11][14]	equine	
+Human	baby
+boy (male)
+child
+girl (female)
+infant	lady (colloquial)
+woman	gentleman (colloquial)
+man	band
+clan
+crowd
+family
+group
+horde
+tribe	human
+simian	
+Hummingbird	chick	hen	cock	?	trochilidine
+trochiline	
+Hyena	cub	?	?	cackle[11][14]
+clan	hyenine	
+I
+Ibex	kid	nanny	billy	herd[67]	caprine	
+Ibis	chick	?	?	?	threskiornithine	
+Iguana	hatchling	cow	bull	?	?	
+Impala	calf	ewe	ram	herd	?	
+J
+Jackal	pup	?	?	pack	?	
+Jaguar	cub	?	?	leap[68]
+parade[21]
+prowl[68]	?	
+Jay	chick	hen	cock	band[11]
+party[14]
+scold[14]	corvine	
+Jellyfish	ephyra[69]
+planula
+polyp	?	?	bloom
+brood[11]
+fluther[2]
+smack[2][14]
+smuth[10]	scyphozoan	
+Jerboa	?	?	?	?	dipodine	
+K
+Kangaroo	joey	doe
+flyer
+jill
+roo	boomer
+buck
+jack	court
+herd
+mob[70]
+troop[14]	macropodine	
+Kingbird	chick	?	?	?	tyrannid	
+Kingfisher	chick	?	?	?	alcedine	
+Kinkajou	kit
+pup	sow	boar	convergence
+troop	potosine	
+Kite	chick	?	?	?	accipitrine	
+Koala	joey	doe	buck	?	phascolarctine	
+Kodkod	kitten	?	?	?	feline	
+Komodo dragon	calf
+chick
+hatchling	cow
+hen	bull
+cock	?	varanine	
+Kookaburra	chick	?	?	?	?	
+Kouprey	calf	cow	bull	herd	bovine
+sauveline	
+Kudu	calf	cow	bull	herd	tragelaphine	
+L
+Langur	infant	?	?	troop, group	colobine	
+Lapwing	chick	?	?	deceit[14][17]
+desert[2]	vanelline	
+Lark	chick	hen	cock	exaltation[2][17]	alaudine	
+Lechwe	calf	?	?	herd	?	
+Lemur	infant	?	?	conspiracy[71]	lemurine	
+Leopard	cub	leopardess	leopard	leap[2][11][14]
+lepe[2]	pardine	
+Lion	cub[24]	lioness	lion	pride[72][73][40]
+sawt[40][74]	leonine	
+Lizard	hatchling	?	?	?	?	
+Llama	cria	dam
+hembra	macho
+stud	flock
+herd	camelid	
+Lobster	?	hen[3]	cock[3]	risk	homarine	
+Locust (list)	nymph	N/A	N/A	cloud
+host
+swarm	caelifera	
+Loris	infant	?	?	colony[75]	lorisine[76]	
+Louse	nymph	N/A	N/A	colony	pediculine	
+Lynx	kitten	?	?	?	feline	
+Lyrebird	chick	hen	cock	musket[77]	menurine	
+M
+Macaque	infant	?	?	?	simian	
+Macaw	hatchling	?	?	?	?	
+Magpie	chick	hen	cock	flock	garruline	
+Mallard
+Also see Duck	duckling	hen	greenhead[78]	sord[2]
+suit[2]	anatine	poultry
+Mammoth	calf	cow	bull	herd
+pack	mammutine	
+Manatee	calf	cow	bull	herd	manatine
+sirenian	
+Mandrill	infant	N/A	N/A	horde	simian	
+Margay	kitten	?	?	?	feline	
+Marmoset	infant	?	?	?	simian	
+Marmot	?	?	?	?	?	
+Meerkat	meerkitten	N/A	N/A	?	herpestine	
+Mink	cub
+kit	sow	boar	?	musteline	
+Mole	pup	sow	boar	labor[21]	talpine	
+Mongoose	pup	?	?	committee
+delegation
+troop	herpestine	
+Monkey	infant	N/A	N/A	group, troop[2]	simian	
+Moose	calf[15]	cow[15]	bull[15][55]	herd	cervine	venison
+Mosquito	nymph
+tumbler
+wriggled	N/A	N/A	cloud
+swarm	aedine
+anopheline	
+Mouse	crawler (as pet feed)[79]
+fuzzy (as pet feed)[79]
+hopper (as pet feed)[79]
+pinky (as pet feed)[79]
+pup	doe	buck	colony
+nest	murine	
+Myna	?	?	?	?	?	
+N
+Narwhal	calf[80]	cow[80]	bull[80]	pod[80]
+herd[80]
+school[80]
+gam[80]
+grind[80]	cetacean[81]
+cetaceous[81]	
+Newt	eft[82]	?	?	?	pleurodeline	
+Nightingale	chick	hen	cock	watch[39][40][41]	philomelian	
+Nilgai	?	?	bull	?	bovine	
+O
+Ocelot	kitten	queen	torn	clowder	feline	
+Octopus	fry[citation needed]	hen[83]	?	consortium[84]	octopodine	
+Okapi	calf	cow	bull	herd	okapine	
+Oncilla	kitten	?	?	?	feline	
+Opossum	joey	jill	jack	passel[85]	didelphine	
+Orangutan	baby
+child
+infant	?	?	band
+family
+group, troop	simian	
+Oryx/gemsbok	calf	?	?	herd	?	
+Ostrich	chick
+hatchling	hen	cock	flock
+troop	ratite
+struthious	
+Otter	pup
+whelp	sow	boar	family[21]
+romp	lutrine
+musteline	
+Ox
+See Cattle						
+Owl	fledgling
+owlet	?	?	parliament[11]	strigine	
+Oyster	spat	?	?	bed[11]	ostracine	
+P
+Panther	cub	pantheress	panther	?	pantherine	
+Parrot	chick	hen	cock	flock	psittacine	
+Panda
+See Giant panda						
+Partridge	chick	chantelle
+hen	cock	?	perdicine	
+Peafowl	chick
+peachick	peahen	peacock	?	pavonine	poultry
+Pelican	chick
+nestling	?	?	pod[11]
+scoop	pelecanine	
+Penguin	chick
+nestling	?	?	colony[86]
+huddle[86]
+raft (in water)[86]
+rookery[86]
+tuxedo[10]
+waddle (on land)[86][87]	spheniscine	
+Pheasant	chick	hen	cock	bouquet[11][14]
+flock
+nest[14]
+nide[14]
+nye[11][14]	phasianine	
+Pig (list)
+Also see Boar	farrow
+piglet
+shoat/shote (just weaned)	gilt (not bred)[88]
+sow (bred)	barrow (castrated)[89][90]
+boar
+hog	drift[11][14][91]
+drove[11][14]
+litter (piglets)
+sounder (older pigs)[21]
+team (older pigs)[21]	porcine
+suilline	bacon
+ham
+pork
+Pigeon (list)	squab
+squeaker	hen	cock	flight[92]
+flock
+kit[92]	pullastrine	squab
+Pika	?	?	?	?	?	
+Polar bear	cub	sow	boar	aurora[93]
+celebration[93]
+pack[93]	ursine	
+Pony
+See Horse						
+Porcupine	pup	sow	boar	prickle[92]	hystricine	
+Porpoise	calf	cow	bull	pod
+school
+shoal	phocoenine	
+Prairie dog	pup	sow	boar	town	cynomurine	
+Pug	pup	bitch	dog
+sire
+stud	grumble[94]	?	
+Q
+Quail	chick	hen	cock	bevy[72][73][39][40][41]	galliformine	
+Quelea	chick	hen	cock	flock	queline	
+Quetzal	nestling	?	?	flock	trogonine	
+R
+Rabbit (list)	bunny
+kit
+kitten
+nestling	doe
+jill	buck
+jack
+yoyo	litter (young)
+nest[73]
+warren
+wrack (young)	leporine	
+Raccoon	cub
+kit	sow	boar	brace
+committee
+gaze[72]
+nursery
+smack
+troop	procyonine	
+Ram
+Also see Sheep	lamb	ewe	ram	flock	arietine
+ovine	lamb
+mutton
+Rat (list)	kitten[citation needed]
+pup	doe	buck	colony
+horde
+mischief[95][96]	murine	
+Raven	chick	hen	cock	conspiracy
+unkindness[39][40][97]	corvine	
+Red deer	calf	hind	hart
+stag	herd	?	venison
+Red panda	cub	sow	boar	pack	ailurid	
+Reindeer/caribou	calf	cow	bull	herd	rangiferine	
+Rhea	chick	?	?	?	?	
+Rhinoceros	calf	cow	bull	crash[98]
+herd	ceratorhine	
+Rook	?	?	?	building[2]
+parliament[2][99]	?	
+S
+Saki	?	?	?	?	pitheciine	
+Salamander	larva	?	?	maelstrom	caudatan
+salamandrine	
+Salmon	parr[100]	hen	cock	?	salmonine	
+Sand dollar	juvenile (young urchin)
+larva pluteus (free-swimming stage)	?	?	?	clypeasteroid	
+Sandpiper	?	?	?	fling[101]	scolopacine	
+Sardine	?	?	?	family [101]	?	
+Sassaby	calf	?	bull	herd	alcelaphine	
+Sea lion	pup	cow	bull	?	otarine	
+Seahorse	seafoal	seamare	seastallion	shoal	hippocampal	
+Seal	pup[5]	cow	bull	herd[101]
+pod[101]
+rookery[101]	phoca	
+Serval	kitten	?	?	?	feline	
+Shark	cub[24]
+pup[102]	?	bull	shiver [57]	selachian
+squaloid	flake (AUS)
+Sheep (list)
+Also see Ram	cosset
+lamb
+lambkin	dam
+ewe	buck
+ram
+wether (castrated)	flock[72][73]
+fold[103]
+herd	ovine	hogget
+lamb
+mutton
+Shrew	shrewlet	sow	boar	colony
+drove	soricine	
+Shrike	chick	?	?	?	corvid
+corvine	
+Siamang	?	?	?	?	?	
+Skink	hatchling	?	?	?	scincine
+scincoid	
+Skipper	caterpillar	?	?	?	papilionid	
+Skunk	kit	sow	boar[3]	surfeit	mephitine	
+Sloth	baby
+kitten
+pup	sow	boar	N/A	xenarthran (broader group)	
+Snail	?	N/A	N/A	escargatoire[101][104]
+rout[101][105]
+walk[101]	gastropodian	escargot
+Snake (list)	hatchling (newly hatched)
+neonate (newborn)
+snakelet	N/A	N/A	ball
+nest[73]
+slither	anguine
+elapine
+ophidian
+serpentine
+viperine	
+Spider (list)	spiderling	?	?	cluster[101]
+clutter[101]	arachnine
+arachnoid	
+Spoonbill	chick	?	?	?	?	
+Squid	paralarva	?	?	shoal	Teuthidane	
+Squirrel	kit
+kitten
+pup	doe	buck	scurry[37]	sciurine	
+Starfish	?	?	?	?	asteroid	
+Starling	?	?	?	chattering[11][35]
+murmuration[2][11][14][17]	sturnine	
+Stilt	chick	?	?	?	recurvirostrid	
+Swan	cygnet
+flapper	pen	cob	bevy[21]
+flock
+game[21]
+lamentation
+wedge (in flight)[21]	cygnine	
+T
+Tamarin	?	?	?	?	simian	
+Tapir	calf	cow	bull	herd	tapirine	
+Tarsier	?	?	?	?	tarsiine	
+Termite	larva	?	?	colony
+nest
+swarm	isopteran	
+Thrush	chick	?	?	?	turdine	
+Tiger	cub[24]
+whelp	tigress	tiger	ambush[11]
+streak[37]	tigrine	
+Toad	tadpole
+toadlet	N/A	N/A	knot[11][14]	batrachian
+ranine	
+Topi	calf	cow	bull	herd	alcelaphine	
+Toucan	chick	?	?	?	?	
+Turaco	?	?	?	?	?	
+Turkey (list)	poult	hen	gobbler
+jake (immature)
+stag
+tom	rafter[106][107]	?	poultry
+Turtle	hatchling	N/A	N/A	bale[108]	chelonian	
+V
+Vicuña	calf	cow	bull	herd
+posse	camelid	
+Vinegaroon	?	?	?	?	?	
+Viper	hatchling	?	?	?	viperine	
+Vulture	chick	?	?	?	?	
+W
+Wallaby	joey	jill	jack	mob	?	
+Walrus	calf	cow	bull	herd[73]
+pod[73]	odobenine	
+Wasp	larva	queen
+worker	drone	colony
+hive
+nest
+swarm	vespine	
+Water buffalo	calf	cow	bull	?	?	carabeef
+Waxwing	?	?	?	?	?	
+Weasel	kit
+pup	bitch
+doe
+jill	buck
+dog
+hub
+jack	gang[16]
+sneak[16]	musteline	
+Whale	calf[32]	cow[33]	bull	gam[21]
+pod[72][73]
+school	cetacean
+cetaceous	blubber
+Wildebeest	calf[32]	cow[33]	bull	confusion	?	
+Wobbegong	?	?	?	?	?	
+Wolf	cub
+pup[5]
+puppy
+whelp	bitch
+she-wolf	dog	pack[72][73]	canine
+lupine	
+Wolverine	kit
+whelp	angeline	wolverine	pack	musteline	
+Wombat	joey	jill	jack	wisdom[109]	?	
+Woodpecker	chick	?	?	?	?	
+Worm	?	?	?	?	caecilian	
+Wren	chick	cow	bull	?	troglodytine	
+Y
+Yak	calf	cow	bull	herd	?	
+Z
+Zebra	colt (male)
+filly (female)
+foal	mare	stallion	cohort[110]
+dazzle[111]
+herd[11][110]
+zeal[11][110]	hippotigrine
+zebrine

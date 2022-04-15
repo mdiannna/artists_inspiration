@@ -4,22 +4,97 @@
     {{ super() }}
     <!-- can add here more styles -->
     <style>
-        .img_full_height {
+        .img-full-height {
             height: 70vh;
+            max-width:100vw;
         }
+        .centered-on-img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .challenge-text {
+            color: #2a3640;
+        }
+        .challenge-img-bg {
+            position:relative;
+        }
+        
     </style>
+    <script type="importmap">
+        {
+          "imports": {
+            "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+          }
+        }
+    </script>
+
 {% endblock %}
 
 {% block content %}
-    <div class="container">
+    <div class="container" id="app">
         <h1>Random challenge for artists</h1>
         <p class="important">
-            Welcome to my awesome homepage - Work in progress...
+            Click on the button to generate a random challenge for painting!
         </p>
-        <br>
+        <button type="button" class="btn btn-outline-success btn-lg" @click=generateChallenge()>I'm ready for the challenge!</button>
+
         
-        <div class="text-center mx-auto">
-            <img src="{{url_for('static', path='/img/paper2_2.jpg')}}" class="img img-responive img_full_height">
+        <div id="challenge" v-if="challengeGenerated"> 
+            <div class="text-center mx-auto challenge-img-bg" >
+                <img src="{{url_for('static', path='/img/paper2_2.jpg')}}" class="img img-responive img-full-height">
+
+                
+                <div class="centered-on-img challenge-text h2"> Make a painting of a [[challengeAnimal]] in the environment of [[challengeEnv]] in the style of [[challengeStyle]] </div>
+
+            </div>
+
+            <p> Read more about artistic styles <a href="https://magazine.artland.com/art-movements-and-styles/">here</a></p>
+
         </div>
     </div>
+{% endblock %}
+
+{% block scripts %}
+
+  <!-- hack to import axios: -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script type="module">
+        import { createApp } from 'vue'
+
+        import { get_rand_challenge } from "{{ url_for('static', path='/js/get_random_challenge.service.js') }}";
+        createApp({
+            data() {
+                return{
+                    message: "test",
+                    challengeGenerated: false,
+                    challengeAnimal: "",
+                    challengeEnv: "",
+                    challengeStyle: "",
+                }
+            },
+            computed: {
+
+            },
+            methods: {
+                generateChallenge() {
+                    get_rand_challenge() 
+                    .then(x => {
+                        console.log("x:", x);
+                        this.challengeAnimal = x.data.animal;
+                        this.challengeEnv = x.data.environment;
+                        this.challengeStyle = x.data.style;
+                        this.challengeGenerated = true;
+                    })
+                }
+
+            },
+            mounted() {
+            },
+            delimiters: ['[[',']]']   // changed vue delimiters not to be the same as jinja2 templating
+          }).mount('#app')
+
+    </script>
 {% endblock %}
