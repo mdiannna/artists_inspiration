@@ -91,18 +91,40 @@ async def random_challenge(request:Request):
 @app.get("/generate-rand-challenge")
 async def generate_rand_challenge():
     # TODO: make a singleton to load all the dataa about animals, environments etc and load only once.
-    try:
-        f = open('challenges_data/animals_list.txt')
-        all_animals = eval(f.read())
-        f.close()
-    except:
-        # TODO: log instead of print
-        print("!! animals list file does not exist or could not be loaded... Using the default animals list")
-        all_animals = ["Dog", "Cat", "Alpaca", "Rabbit", "Turtle", "Giraffe", "Bug", "Bee", "Horse", "Lion", "Ox", "Owl"]
     
 
     # TODO: more options
     all_environments = ["forest", "street", "theater", "planet", "space", "sea", "fantasy"]
+
+    subject_types = ["animal", "object", "general"]
+    subject_type=random.choice(subject_types)
+    subject = "what you whish"
+
+    if subject_type=="animal":
+        try:
+            f = open('challenges_data/animals_list.txt')
+            all_animals = eval(f.read())
+            f.close()
+        except:
+            # TODO: log instead of print
+            print("!! animals list file does not exist or could not be loaded... Using the default animals list")
+            all_animals = ["Dog", "Cat", "Alpaca", "Rabbit", "Turtle", "Giraffe", "Bug", "Bee", "Horse", "Lion", "Ox", "Owl"]
+        subject = "a " + random.choice(all_animals).lower()
+
+    elif subject_type=="object":
+        try:
+            f = open("challenges_data/objects_list.txt")
+            all_objects = f.read().split("\n")
+        except:
+            all_objects = ["vase", "flower", "window", "clothes", "tree"]
+        subject = "a " + random.choice(all_objects).lower()
+    else:
+        try:
+            f = open("challenges_data/painting_subjects1.txt")
+            painting_subjs1 = f.read().split("\n")
+        except:
+            painting_subjs1 = ["flowers in a vase", "astronauts", "spaceship", "your dreams"]
+        subject = random.choice(painting_subjs1).lower()
 
     #TODO: more artistic styles maybe
     try:
@@ -112,8 +134,7 @@ async def generate_rand_challenge():
     except:
         all_artistic_styles = ["realism", "impressionism", "abstractionism"]
 
-
-    return {"animal": random.choice(all_animals).lower(), "environment": random.choice(all_environments).lower(), "style":random.choice(all_artistic_styles).lower()}
+    return {"subject": subject, "subject_type":subject_type, "environment": random.choice(all_environments).lower(), "style":random.choice(all_artistic_styles).lower()}
 
 
 # @app.get("/items/{item_id}")

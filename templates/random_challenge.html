@@ -5,7 +5,7 @@
     <!-- can add here more styles -->
     <style>
         .img-full-height {
-            height: 55vh;
+            height: 56vh;
             max-width:100vw;
         }
         .centered-on-img {
@@ -58,13 +58,13 @@
                 <img src="{{url_for('static', path='/img/paper2_2.jpg')}}" class="img img-responive img-full-height">
 
                 
-                <div class="centered-on-img challenge-text h2"> Make a painting of a <span class="animal-style">[[challengeAnimal]]</span> in the environment of 
+                <div class="centered-on-img challenge-text h2"> Make a painting of <span class="animal-style">[[challengeSubject]]</span> in the environment of 
                     <span class="env-style">[[challengeEnv]]</span> in the style of <span class="style-style">[[challengeStyle]]</span> </div>
 
             </div>
 
             <p> Read more about artistic styles <a href="https://magazine.artland.com/art-movements-and-styles/"  target="_blank">here</a></p>
-            <p>Don't know how the animal looks? See it <a :href="[[animalSearchLink]]" target="_blank">here</a></p>
+            <p v-if="animalSearchLink">Don't know how the animal looks? See it <a :href="[[animalSearchLink]]" target="_blank">here</a></p>
         </div>
     </div>
 {% endblock %}
@@ -97,11 +97,15 @@
                     get_rand_challenge() 
                     .then(x => {
                         console.log("x:", x);
-                        this.challengeAnimal = x.data.animal;
+                        this.challengeSubject = x.data.subject;
+                        this.challengeSubjType = x.data.subject_type;
                         this.challengeEnv = x.data.environment;
                         this.challengeStyle = x.data.style;
                         this.challengeGenerated = true;
-                        this.animalSearchLink = this.getAnimalSearchLink(this.challengeAnimal);
+
+                        if (this.challengeSubjType=="animal"){
+                            this.animalSearchLink = this.getAnimalSearchLink(this.challengeAnimal);
+                        }
                     })
                 
                 },

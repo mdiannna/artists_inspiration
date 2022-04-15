@@ -1,0 +1,48 @@
+diary
+bottle
+water
+packet
+chewing gum
+tissue
+glasses
+watch
+photo
+camera
+stamp
+postcard
+dictionary
+coin
+brush
+credit card
+identity card
+key
+mobile phone
+wallet
+button
+umbrella
+pen
+pencil
+match
+lipstick
+purse
+case
+clip
+scissors
+file
+banknote
+passport
+comb
+notebook
+laptop
+rubbish
+mirror
+sunscreen
+toothbrush
+headphone
+player
+battery
+light bulb
+bin
+newspaper
+magazine
+alarm clock

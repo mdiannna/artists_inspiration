@@ -750,7 +750,6 @@ Tarsier	?	?	?	?	tarsiine
 Termite	larva	?	?	colony
 nest
 swarm	isopteran	
-Thrush	chick	?	?	?	turdine	
 Tiger	cub[24]
 whelp	tigress	tiger	ambush[11]
 streak[37]	tigrine	
