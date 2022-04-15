@@ -7,9 +7,54 @@
 
 {% block content %}
     <div class="container">
-        <h1>Index</h1>
+        <h1>Inspiration for artists</h1>
         <p class="important">
-        Welcome to my awesome homepage.
+        Here is the place where you will be inspired for your next painting!
         </p>
+        <p>
+            There are various tools to help you out, some of them using Artificial Intelligence:
+        </p>
+
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{url_for('static', path='img/paint1.jpg')}}" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <div class="h3 card-title"> Color palette extractor</div>
+                
+                      <p class="card-text">Extract the color palette from a image with the help of AI</p>
+
+                        <a href="/color-palette-extractor" class="btn btn-lg btn-outline-primary">Start using tool</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{url_for('static', path='img/pencils1.jpg')}}" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <div class="h3 card-title"> Random painting challenge </div>
+                
+                      <p class="card-text">You're up for a challenge? <br> Then this is for you!</p>
+
+                      <a href="/random-challenge" class="btn btn-lg btn-outline-primary">Start using tool</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{url_for('static', path='img/city1.jpg')}}" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <div class="h3 card-title"> Inspiring images for your painting</div>
+                
+                      <p class="card-text">Look at some beautiful images to inspire you for your next amazing painting!</p>
+
+                        <button type="button" class="btn btn-lg btn-outline-primary">Start using tool</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 {% endblock %}
