@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <!-- can add here more styles -->
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Random image for inspiration</h1>
+        <div>
+            <p class="important">
+            Here is your random image:
+            </p>
+            <img src="https://picsum.photos/700/500">
+        </div>
+        <div class="mt-1 mb-1">
+            <button type="button" class="btn btn-danger" onclick="document.location.reload()"> Try again</button>
+        </div>
+    </div>
+{% endblock %}

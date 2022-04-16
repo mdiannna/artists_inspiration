@@ -140,3 +140,8 @@ async def generate_rand_challenge():
 # @app.get("/items/{item_id}")
 # async def read_item(item_id):
 #     return {"item_id": item_id}
+
+
+@app.get("/random-img-inspiration", response_class=HTMLResponse)
+async def col_palette_extractor(request:Request):
+    return templates.TemplateResponse("random_img_inspiration.html", {"request": request})
