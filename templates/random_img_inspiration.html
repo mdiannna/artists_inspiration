@@ -6,16 +6,17 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container">
+    <div class="container text-center">
         <h1>Random image for inspiration</h1>
-        <div>
-            <p class="important">
+        <div class="mx-auto my-auto text-center">
+           <!-- <p class="important">
             Here is your random image:
-            </p>
+            </p>-->
             <img src="https://picsum.photos/700/500">
         </div>
-        <div class="mt-1 mb-1">
-            <button type="button" class="btn btn-danger" onclick="document.location.reload()"> Try again</button>
+        <div class="mt-1 mb-1 text-center">
+            <button type="button" class="btn btn-secondary" onclick="document.location.reload()"><i class="bi bi-arrow-counterclockwise"></i>
+                Try again</button>
         </div>
     </div>
 {% endblock %}

@@ -50,10 +50,13 @@
         <p class="important">
             Click on the button to generate a random challenge for painting!
         </p>
-        <button type="button" class="btn btn-outline-success btn-lg" @click=generateChallenge()>I'm ready for the challenge!</button>
+
+        <div class="mt-1 mb-1">
+            <button type="button" class="btn btn-outline-success btn-lg mt-1 mb-2" @click=generateChallenge()>I'm ready for the challenge!</button>
+        <div>
 
         
-        <div id="challenge" v-if="challengeGenerated"> 
+        <div id="challenge" v-if="challengeGenerated" class="mt-1"> 
             <div class="text-center mx-auto challenge-img-bg" >
                 <img src="{{url_for('static', path='/img/paper2_2.jpg')}}" class="img img-responive img-full-height">
 
@@ -64,7 +67,7 @@
             </div>
 
             <p> Read more about artistic styles <a href="https://magazine.artland.com/art-movements-and-styles/"  target="_blank">here</a></p>
-            <p v-if="animalSearchLink">Don't know how the animal looks? See it <a :href="[[animalSearchLink]]" target="_blank">here</a></p>
+            <p v-if="animalSearchLink">Not sure how a "[[challengeSubject.replace("a ", "")]]" looks like? See it <a :href="[[animalSearchLink]]" target="_blank">here</a></p>
         </div>
     </div>
 {% endblock %}
@@ -104,7 +107,10 @@
                         this.challengeGenerated = true;
 
                         if (this.challengeSubjType=="animal"){
-                            this.animalSearchLink = this.getAnimalSearchLink(this.challengeAnimal);
+                            this.animalSearchLink = this.getAnimalSearchLink(this.challengeSubject);
+                        }
+                        else {
+                            this.animalSearchLink = "";
                         }
                     })
                 
