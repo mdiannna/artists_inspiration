@@ -131,3 +131,4 @@ dmypy.json
 uploads/
 static/vendor/
 deta_credentials.txt
+.deta

@@ -6,7 +6,7 @@ from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse
 from typing import List
 from utils import save_file
-from color_palette import extractColorPaletteFromImg
+# from color_palette import extractColorPaletteFromImg
 from pydantic import BaseModel
 from typing import Optional
 import time
@@ -40,7 +40,9 @@ def perform_extract_palette(data: ImgFile):
 
     try:
         print("img src:", img_src)
-        colors = extractColorPaletteFromImg(data.folder + "/" + data.filename)
+        # commented for now because sklearn does not work with deta cloud
+        # colors = extractColorPaletteFromImg(data.folder + "/" + data.filename)
+        colors = ["#FF0000", "#00FF00", "0000FF"]
         print("colors:", colors)
         return {"status":"success", "colors": colors}
     except:
